@@ -6,6 +6,13 @@ const projects = [
   updatedTimeSig: "Updated 1,200 years ago",
   vis: true,
   },
+  {
+    id: 2,
+    title: "dummy2",
+    description: "This is a description",
+    updatedTimeSig: "Updated 1 second ago",
+    vis: true,
+  },
 ]
 
 // projectCount to show how many projects "open" in header
