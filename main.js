@@ -23,12 +23,12 @@ const projectsOnDom = () => {
     domString += `
         <li class="list-group-item">
           <div>
-            ${projects.title}
-            ${projects.vis}
-            ${projects.updatedTimeSig}
+            ${project.title}
+            ${project.vis}
+            ${project.updatedTimeSig}
           </div>
           <div>
-            ${projects.description}
+            ${project.description}
           </div>
         </li>
     `
@@ -37,10 +37,15 @@ const projectsOnDom = () => {
         </ul>
     </div>
   `
-  renderToDom(projects, domString);
+  renderToDom("#projects", domString);
 }
 
+
+
 // "domElement would be where you pass in your dom string variable"
-const renderToDom = (array, html) => {
-  domElement.i
+const renderToDom = (divID, html) => {
+  const targetDiv = document.querySelector(divID);
+  targetDiv.innerHTML = html;
 }
+
+projectsOnDom();
