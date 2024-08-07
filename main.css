@@ -1,0 +1,39 @@
+body {
+    background-color: #0F1218;
+    text-align: center;
+    margin: 60px;
+    width: 100vw;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 75rem;
+}
+
+.profile {
+    border: 5px solid red;
+    width: 15rem;
+    height: 50rem;
+}
+
+.navBar {
+    border: 5px solid blue;
+    width: 60rem;
+    height: 10rem;
+}
+
+.pinned {
+    border: 5px solid yellow;
+    width: 60rem;
+    height: 40rem;
+}
+
+.footer {
+    
+    border: 5px solid orange;
+    width: 60rem;
+    height: 10rem;
+}
