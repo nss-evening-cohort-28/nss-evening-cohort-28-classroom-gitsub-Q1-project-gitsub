@@ -43,13 +43,6 @@ body {
     margin-top: 2%;
 }
 
-
-=======
-    height: 5rem;
-    margin-top: auto;
-    align-self: flex-end;
-}
-
 #footerContainer {
     display: flex;
     align-self: flex-end;
