@@ -30,23 +30,61 @@ body {
 }
 
 .pinned {
-    border: 5px solid yellow;
+    border: none;
     width: 60rem;
     height: 25rem;
     margin-top: 2%;
 }
 
 .newProject {
-    border: 5px solid green;
     width: 60rem;
     height: 25rem;
     margin-top: 2%;
+    text-align: start;
+    color: #B3B3B3;
 }
 
 #footerContainer {
     display: flex;
     align-self: flex-end;
 
+}
+
+/* Casey styling: Projects section */
+
+#projectCards {
+    border: 1px solid #24292d;
+}
+
+.card-header {
+    background-color: #2b3137;
+    color: #B3B3B3;
+    text-align: start;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0F1218;
+    color: #B3B3B3;
+    border: 1px solid #24292d;
+}
+
+
+
+.form-control {
+    background-color: #0F1218;
+    border: 1px solid #24292d;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #0F1218;
+    color: white;
+}
+
+.createBtn {
+    background-color: #238536;
 }
 
 /* Noah Styling: Profile Section Start*/

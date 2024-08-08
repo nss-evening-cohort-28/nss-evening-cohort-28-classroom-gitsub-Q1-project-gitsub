@@ -23,7 +23,7 @@ let domString = "";
 // Renders the project cards onto the dom from the projects array
 const projectsOnDom = () => {
   domString = `
-    <div class="card" style="width: 18rem;">
+    <div id="projectCards" class="card">
       <div class="card-header">
         ${projectCount} Open
       </div>
@@ -36,7 +36,7 @@ const projectsOnDom = () => {
             ${project.title}
           </div>
           <div id="visEl">
-            ${project.vis}
+            ${project.vis ? "Public" : "Private"}
           </div>
           <div id="timeSigEl">
           ${project.updatedTimeSig}
