@@ -77,8 +77,7 @@ e.preventDefault(); // stops page from refreshing
       };
 
   projects.push(newProjectObject);
-  //projectsOnDom();
-  renderToDom("#projects", domString);
+  projectsOnDom();
   form.reset();
 }
 
