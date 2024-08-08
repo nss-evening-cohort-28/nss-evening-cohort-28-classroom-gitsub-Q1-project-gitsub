@@ -16,9 +16,36 @@
                     <a href="index.html">Overview Page</a>
                 </button>
             </div>
-            <div id="projects" class="pinned">PROJECTS</div>
-            <div class="newProject">NEW PROJECT FORM</div>
-            <div class="footer">FOOTER</div>
+
+            <!-- The sections that lists projects -->
+            <div id="projects" class="pinned">PROJECTS
+                <!-- This is where "projectsOnDom" renders! -->
+            </div>
+
+            <!-- Create a new project form -->
+            <div class="newProject">
+                <h2>Create a new project</h2>
+                <p>Coordinate, track, and update your work in one place, so projects stay transparent and on schedule.</p>
+                <form>
+                    <div class="mb-3">
+                      <label class="form-label">Project board name</label>
+                      <input class="form-control" id="projectNameInput">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Description</label>
+                      <textarea class="form-control" id="descInput" rows="4"></textarea>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" id="privateCheck">Private?</label>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Create project</button>
+                  </form>
+            </div>
+
+            <!-- Footer -->
+             <div class="flexContainer">
+                 <div class="footer">FOOTER</div>
+             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

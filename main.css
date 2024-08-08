@@ -45,12 +45,5 @@ body {
     border: 5px solid orange;
     width: 60rem;
     height: 10rem;
-    margin-top: auto;
-    align-self: flex-end;
-}
-
-#footerContainer {
-    display: flex;
-    align-self: flex-end;
-
+    margin-top: 20%;
 }
