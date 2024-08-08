@@ -56,3 +56,85 @@ const renderToDom = (divID, html) => {
 }
 
 projectsOnDom();
+
+
+
+const repos = [
+{
+id:1,
+title:"dummyRepo1",
+description:"red",
+codingLang:"javaScript",
+tags:"yellow",
+updatedTimeSin:"",
+issues:"broken",
+vis:true,
+forks:4,
+stars:5,
+},
+
+{
+id:2,
+title:"dummyRepo2",
+description:"green",
+codingLang:"CSS",
+tags:"round",
+undatedTimeSin:"",
+issues:"bugs",
+vis:false,
+forks:10,
+stars:2,
+},
+
+{
+id:3,
+title:"dummyRepo3",
+description:"brown",
+codingLang:"html",
+tags:"square",
+updatedTimeSin:"",
+issues:"merging",
+vis:true,
+forks:3,
+stars:1,
+},
+
+{
+  id:4,
+  title:"dummyRepo4",
+  description:"orange",
+  codingLang:"python",
+  tags:"oval",
+  updatedTimeSin:"",
+  issues:"merging",
+  vis:true,
+  forks:3,
+  stars:1,
+},
+
+{
+  id:5,
+  title:"dummyRepo5",
+  description:"brown",
+  codingLang:cSharp,
+  tags:square,
+  updatedTimeSin:1300,
+  issues:merging,
+  vis:false,
+  forks:3,
+  stars:1,
+},
+
+{
+  id:6,
+  title:dummyRepo6,
+  description:pink,
+  codingLang:react,
+  tags:octogon,
+  updatedTimeSin:1300,
+  issues:merging,
+  vis:true,
+  forks:3,
+  stars:1,
+},
+]
