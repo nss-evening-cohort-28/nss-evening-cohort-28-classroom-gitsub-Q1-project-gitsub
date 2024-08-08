@@ -79,17 +79,15 @@ h3, h4, h5 {
     margin: 20px;
   }
 
-  .bottom-section {
+  .sponsor-pic {
     display: flex;
     flex-wrap: wrap;
-    align-content: end;
-
-  }
-  .sponsor-pic {
+    flex-direction: row;
+    justify-content: space-around;
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    margin: 5px;
+    margin: 20px;
   }
 
   .profile-body {

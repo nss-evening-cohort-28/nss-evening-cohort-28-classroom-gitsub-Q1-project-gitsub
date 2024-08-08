@@ -20,7 +20,7 @@ body {
     width: 15rem;
     height: 50rem;
     text-align: left;
-
+    padding-left: 10px;
 }
 
 .navBar {
@@ -79,27 +79,18 @@ h3, h4, h5 {
     margin: 20px;
   }
 
-  .bottom-section {
+  .sponsor-pic {
     display: flex;
     flex-wrap: wrap;
-    align-content: end;
-
-  }
-  .sponsor-pic {
+    justify-content: space-around;
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    margin: 5px;
+    margin: 20px;
   }
 
-  .profile-body {
-    font-size: small;
-    margin: 0px 0px 0px 10px;
-    padding: 0px;
-  }
-
-  .middle-section {
-    font-size: small;
-    margin-left: 10px;
+  .profile-info {
+    margin: 0px 0px 0px 0px !important;
+    padding: 0px 0px 0px 0px;
   }
 /* Noah Styling: Profile Section End */
