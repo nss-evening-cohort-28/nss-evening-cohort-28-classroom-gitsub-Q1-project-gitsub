@@ -103,36 +103,3 @@ h3, h4, h5 {
     margin-left: 10px;
   }
 /* Noah Styling: Profile Section End */
-
-/* Noah Styling: Footer Section Start */
-
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.footer-pic {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    opacity: 60%;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    margin: 5px;
-  }
-  .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-
-  }
-
-
-/* Noah Styling: Footer Section Start */
