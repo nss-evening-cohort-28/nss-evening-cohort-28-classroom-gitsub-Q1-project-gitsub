@@ -16,11 +16,11 @@ body {
 }
 
 .profile {
+    display: flex;
+    flex-wrap: wrap;
     border: 5px solid red;
     width: 15rem;
     height: 50rem;
-    text-align: left;
-
 }
 
 .navBar {
@@ -43,9 +43,10 @@ body {
     margin-top: 2%;
 }
 
-
-=======
-    height: 5rem;
+.footer {
+    border: 5px solid orange;
+    width: 60rem;
+    height: 10rem;
     margin-top: auto;
     align-self: flex-end;
 }
@@ -57,9 +58,6 @@ body {
 }
 
 /* Noah Styling: Profile Section Start*/
-h3, h4, h5 {
-    margin: 10px;
-}
 
 .top-section {
     display: flex;
@@ -78,57 +76,14 @@ h3, h4, h5 {
     margin: 20px;
   }
 
-  .bottom-section {
+  .sponsor-pic {
     display: flex;
     flex-wrap: wrap;
-    align-content: end;
-
-  }
-  .sponsor-pic {
+    justify-content: space-around;
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    margin: 5px;
+    margin: 20px;
   }
 
-  .profile-body {
-    font-size: small;
-    margin: 0px 0px 0px 10px;
-    padding: 0px;
-  }
-
-  .middle-section {
-    font-size: small;
-    margin-left: 10px;
-  }
 /* Noah Styling: Profile Section End */
-
-/* Noah Styling: Footer Section Start */
-
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.footer-pic {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    opacity: 60%;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    margin: 5px;
-  }
-  .footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-
-  }

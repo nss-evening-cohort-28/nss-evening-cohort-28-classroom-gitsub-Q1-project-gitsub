@@ -86,3 +86,128 @@ const submitForm = document.querySelector("#projectForm");
 submitForm.addEventListener("submit", createProject);
 
 projectsOnDom();
+
+
+
+const repos = [
+{
+id:1,
+title:"dummyRepo1",
+description:"red",
+codingLang:"javaScript",
+tags:"yellow",
+updatedTimeSin:"",
+issues:"broken",
+vis:true,
+forks:4,
+stars:5,
+},
+
+{
+id:2,
+title:"dummyRepo2",
+description:"green",
+codingLang:"CSS",
+tags:"round",
+undatedTimeSin:"",
+issues:"bugs",
+vis:false,
+forks:10,
+stars:2,
+},
+
+{
+id:3,
+title:"dummyRepo3",
+description:"brown",
+codingLang:"html",
+tags:"square",
+updatedTimeSin:"",
+issues:"merging",
+vis:true,
+forks:3,
+stars:1,
+},
+
+{
+  id:4,
+  title:"dummyRepo4",
+  description:"orange",
+  codingLang:"python",
+  tags:"oval",
+  updatedTimeSin:"",
+  issues:"merging",
+  vis:true,
+  forks:3,
+  stars:1,
+},
+
+{
+  id:5,
+  title:"dummyRepo5",
+  description:"brown",
+  codingLang:"cSharp",
+  tags:"square",
+  updatedTimeSin:"",
+  issues:"merging",
+  vis:false,
+  forks:3,
+  stars:1,
+},
+
+{
+  id:6,
+  title:"dummyRepo6",
+  description:"pink",
+  codingLang:"react",
+  tags:"octogon",
+  updatedTimeSin:"",
+  issues:"merging",
+  vis:true,
+  forks:3,
+  stars:1,
+},
+]
+
+
+const packages = [
+{
+id:1,
+title:"devPort",
+description:"",
+},
+
+{
+id:2,
+title:"viewPort",
+description:"",
+},
+
+{
+id:3,
+ title:"packPage",
+  description:"",
+},
+  
+ {
+ id:4,
+ title:"poundGround",
+  description:"",
+  },
+    
+  {
+  id:5,
+  title:"elbowSwift",
+  description:"",
+  },
+      
+  {
+  id:6,
+ title:"patrolingPaw",
+  description:"",
+  },
+        
+]
+
+
+

@@ -43,8 +43,9 @@ body {
     margin-top: 2%;
 }
 
-
-=======
+.footer {
+    border: 5px solid orange;
+    width: 60rem;
     height: 5rem;
     margin-top: auto;
     align-self: flex-end;
@@ -117,10 +118,9 @@ h3, h4, h5 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    opacity: 60%;
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     margin: 5px;
   }
   .footer-links {
@@ -129,6 +129,15 @@ h3, h4, h5 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
 
   }
+
+  #footer-tag {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+/* Noah Styling: Footer Section Start */
