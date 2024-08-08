@@ -18,8 +18,11 @@ const projects = [
 // projectCount to show how many projects "open" in header
 const projectCount = projects.length;
 
+let domString = "";
+
+// Renders the project cards onto the dom from the projects array
 const projectsOnDom = () => {
-  let domString = `
+  domString = `
     <div class="card" style="width: 18rem;">
       <div class="card-header">
         ${projectCount} Open
@@ -29,12 +32,16 @@ const projectsOnDom = () => {
   for (project of projects) {
     domString += `
         <li class="list-group-item">
-          <div>
+          <div id="titleEl">
             ${project.title}
-            ${project.vis}
-            ${project.updatedTimeSig}
           </div>
-          <div>
+          <div id="visEl">
+            ${project.vis}
+          </div>
+          <div id="timeSigEl">
+          ${project.updatedTimeSig}
+          </div>
+          <div id="descEl">
             ${project.description}
           </div>
         </li>
@@ -49,10 +56,33 @@ const projectsOnDom = () => {
 
 
 
-// "domElement would be where you pass in your dom string variable"
+// Renders arguments to the dom. divID is the target div you want to inject the html. "html" would be your "domString"
 const renderToDom = (divID, html) => {
   const targetDiv = document.querySelector(divID);
   targetDiv.innerHTML = html;
 }
+
+
+// Create, the "C" in CRUD
+form = document.querySelector("#projectForm")
+
+const createProject = (e) => {
+e.preventDefault(); // stops page from refreshing
+  const newProjectObject = {
+      id: projects.length + 1,
+      title: document.querySelector("#projectNameInput").value,
+      description: document.querySelector("#descInput").value,
+      updatedTimeSig: "Updated 1 minute ago",
+      vis: "Public",
+      };
+
+  projects.push(newProjectObject);
+  //projectsOnDom();
+  renderToDom("#projects", domString);
+  form.reset();
+}
+
+const submitForm = document.querySelector("#projectForm");
+submitForm.addEventListener("submit", createProject);
 
 projectsOnDom();
