@@ -43,9 +43,8 @@ body {
     margin-top: 2%;
 }
 
-.footer {
-    border: 5px solid orange;
-    width: 60rem;
+
+=======
     height: 5rem;
     margin-top: auto;
     align-self: flex-end;
@@ -133,6 +132,3 @@ h3, h4, h5 {
     gap: 20px;
 
   }
-
-
-/* Noah Styling: Footer Section Start */
