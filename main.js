@@ -18,9 +18,11 @@ const projects = [
 // projectCount to show how many projects "open" in header
 const projectCount = projects.length;
 
+let domString = "";
+
 // Renders the project cards onto the dom from the projects array
 const projectsOnDom = () => {
-  let domString = `
+  domString = `
     <div class="card" style="width: 18rem;">
       <div class="card-header">
         ${projectCount} Open
@@ -62,27 +64,25 @@ const renderToDom = (divID, html) => {
 
 
 // Create, the "C" in CRUD
+form = document.querySelector("#projectForm")
+
 const createProject = (e) => {
 e.preventDefault(); // stops page from refreshing
   const newProjectObject = {
       id: projects.length + 1,
       title: document.querySelector("#projectNameInput").value,
       description: document.querySelector("#descInput").value,
-      updatedTimeSig: document.querySelector("#timeSigEl").value,
-      vis: document.querySelector("#privateCheck").checked
+      updatedTimeSig: "Updated 1 minute ago",
+      vis: "Public",
       };
 
   projects.push(newProjectObject);
-
-  domString.innerHTML = "";
-  renderDom("#projects", domString);
-  //nameFrm.reset();
+  //projectsOnDom();
+  renderToDom("#projects", domString);
+  form.reset();
 }
 
-const submitForm = document.querySelector("#submitBtn")
-
-submitForm.addEventListener("click", (e)) => {
-  if (e.target.id.includes())
-}
+const submitForm = document.querySelector("#projectForm");
+submitForm.addEventListener("submit", createProject);
 
 projectsOnDom();
