@@ -82,14 +82,18 @@ h3, h4, h5 {
   .bottom-section {
     display: flex;
     flex-wrap: wrap;
-    align-content: end;
-
+    flex-direction: row;
+    justify-content: space-around;
   }
   .sponsor-pic {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    margin: 5px;
+    margin: 20px;
   }
 
   .profile-body {

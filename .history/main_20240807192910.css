@@ -19,8 +19,6 @@ body {
     border: 5px solid red;
     width: 15rem;
     height: 50rem;
-    text-align: left;
-
 }
 
 .navBar {
@@ -58,15 +56,11 @@ body {
 }
 
 /* Noah Styling: Profile Section Start*/
-h3, h4, h5 {
-    margin: 10px;
-}
 
 .top-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: 0px;
 }
 
 .card-img-top {
@@ -79,27 +73,5 @@ h3, h4, h5 {
     margin: 20px;
   }
 
-  .bottom-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: end;
 
-  }
-  .sponsor-pic {
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    margin: 5px;
-  }
-
-  .profile-body {
-    font-size: small;
-    margin: 0px 0px 0px 10px;
-    padding: 0px;
-  }
-
-  .middle-section {
-    font-size: small;
-    margin-left: 10px;
-  }
 /* Noah Styling: Profile Section End */
