@@ -77,13 +77,12 @@ e.preventDefault(); // stops page from refreshing
       };
 
   projects.push(newProjectObject);
-  //projectsOnDom();
-  renderToDom("#projects", domString);
+  projectsOnDom();
   form.reset();
 }
 
-const submitForm = document.querySelector("#projectForm");
-submitForm.addEventListener("submit", createProject);
+form = document.querySelector("#projectForm");
+form.addEventListener("submit", createProject);
 
 projectsOnDom();
 
