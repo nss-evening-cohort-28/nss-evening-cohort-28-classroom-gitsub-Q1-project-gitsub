@@ -210,3 +210,63 @@ id:3,
 
 
 
+// Injecting the profile into the dom
+const profileDom = document.querySelector(".profile")
+profileDom.innerHTML = `
+          <div class="top-section">
+            <img src="https://media.tenor.com/GliBTZeL1kQAAAAM/%D0%BC%D0%BE%D0%B9-%D0%B4%D0%B5%D0%B4.gif" class="card-img-top" >
+            <div class="profile-info">
+            <h3>NoCaToMa BaDeCuAl</h3>
+            <h4>@best_team_ever</h4>  
+            <h5>Building tech to elevate people, Founder of Level Up FE/JS group for cohort E28!</h5>
+            </div>
+            <div class="profile-section-buttons">
+              <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary" type="button">Follow</button>
+                <button class="btn btn-primary" type="button">♡ Sponsor</button>
+                <button class="btn btn-primary" type="button">...</button>
+              </div>
+            </div>
+            <div class="profile-body">
+              <p>👤 1.8k followers • 27 following • ⭐️ 329</p>
+              <p>📍 Nashville, TN</p>
+              <p>📧level-up@nss.com</p>
+              <p>🔗 www.nashvillesoftwareschool.com</p>
+              <p>🐦 NSS/x.com</p>
+            </div>
+          </div>
+          <div class="middle-section">
+            <h4>Highlights</h4>
+            <p>❄️ Arctic Code Vault Contributor</p>
+            <p>⭐️ Github Star</p>
+            <p>🌟 PRO</p>
+          </div>
+          <div class="bottom-section">
+            <h4>Sponsors</h4>
+            <br>
+            <img src="https://avatars.githubusercontent.com/u/31261276?s=100&v=4" class="sponsor-pic">
+            <img src="https://avatars.githubusercontent.com/u/137121714?s=100&v=4" class="sponsor-pic">
+            <img src="https://avatars.githubusercontent.com/u/173638175?s=100&v=4" class="sponsor-pic">
+            <img src="https://avatars.githubusercontent.com/u/107224963?s=100&v=4" class="sponsor-pic">
+          </div>
+`;
+
+// Injecting footer into DOM
+const footerDom = document.querySelector(".footer");
+footerDom.innerHTML = `
+              <div class="footer-links">
+                <p>©2024 Github, Inc.</p>
+                <a id="footer-tag" href="">Terms</a>
+                <a id="footer-tag" href="">Privacy</a>
+                <a id="footer-tag" href="">Security</a>
+                <a id="footer-tag" href="">Status</a>
+                <a id="footer-tag" href="">Help</a>
+                <img src="https://cdn-icons-png.flaticon.com/256/889/889111.png" class="footer-pic">
+                <a id="footer-tag" href="">Contact Github</a>
+                <a id="footer-tag" href="">Pricing</a>
+                <a id="footer-tag" href="">API</a>
+                <a id="footer-tag" href="">Training</a>
+                <a id="footer-tag" href="">Blog</a>
+                <a id="footer-tag" href="">About</a>
+              </div>
+`
