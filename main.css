@@ -1,21 +1,10 @@
 body {
   background: #0d1117;
+  color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .navbar {
   background: transparent !important;
@@ -28,31 +17,8 @@ body {
 .logo {
   height: 20px;
   width: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 #profile {
   width: 20.5rem;
   height:60%;
@@ -64,6 +30,7 @@ body {
 #picture {
   border-radius: 50%;
 }
+/*
 ===================== Repository List =====================
 */
 
