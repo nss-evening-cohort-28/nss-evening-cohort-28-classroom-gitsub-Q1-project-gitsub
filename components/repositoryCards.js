@@ -1,6 +1,6 @@
 import { renderToDom } from "../utils/renderToDom.js";
 
-export const repositoryCard = (array) => {
+export const repositoryCards = (array) => {
   let domString = '';
 
   // TODO: Render the tools and icon dynamically

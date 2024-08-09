@@ -1,5 +1,5 @@
 import { repositories } from "./data.js";
-import { repositoryCard } from "./components/repositoryCard.js";
+import { repositoryCards } from "./components/repositoryCards.js";
 
 // Repository Page
-repositoryCard(repositories);
+repositoryCards(repositories);
