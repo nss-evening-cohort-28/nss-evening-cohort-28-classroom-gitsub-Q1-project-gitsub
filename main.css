@@ -53,3 +53,15 @@ body {
   margin: 0 5px;
   padding: 0 10px;
 }
+.col-2 {
+  display: flex;
+  place-items: center;
+}
+.col-2 button {
+  color: wheat;
+  background: none;
+  width: 3em;
+  height: 3em;
+  border: none;
+  /* border: 1px solid wheat; */
+}
