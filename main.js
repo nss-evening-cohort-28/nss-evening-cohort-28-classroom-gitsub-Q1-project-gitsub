@@ -22,6 +22,7 @@ const createRepository = () => {
   repositoryCards(repositories);
 };
 
+// Render the cards on first page load.
 repositoryCards(repositories);
 
 // Event listeners
