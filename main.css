@@ -45,3 +45,22 @@ nav {
   height: 60px;
   width: 1000px;
 }
+
+.endColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 300px;
+}
+
+.list-group-item {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
