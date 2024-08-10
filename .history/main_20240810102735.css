@@ -140,6 +140,7 @@ h3, h4, h5 {
 /* Noah Styling: Navbar Section Start */
 
 .navBar {
+  font-size: medium;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

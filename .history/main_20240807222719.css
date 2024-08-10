@@ -136,20 +136,3 @@ h3, h4, h5 {
 
 
 /* Noah Styling: Footer Section Start */
-
-/* Noah Styling: Navbar Section Start */
-
-.navBar {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: center;
-  gap: 20px;
-}
-
-
-
-
-
-/* Noah Styling: Navbar Section End */
