@@ -1,0 +1,81 @@
+.profilePic {
+  width: 300px;
+  height: 300px;
+}
+
+.profileMain {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: first baseline;
+}
+
+#footerNavbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  gap: 13px;
+  margin: auto;
+}
+
+.footerNav {
+  display: flex;
+  justify-content:flex-end;
+  margin: auto;
+}
+
+.gitHubImage {
+  width: 50px;
+  height: 50px;
+}
+
+.navbarMain {
+  height: 60px;
+  width: 1000px;
+}
+
+.endColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 300px;
+}
+
+.list-group-item {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#exampleFormControlInput1 {
+  width: 850px;
+}
+
+#exampleFormControlInput2 {
+  width: 850px;
+  height: 150px;
+}
+
+.formManip {
+  padding-top: 65px;
+  display: flex; 
+  gap: 25px;
+}
