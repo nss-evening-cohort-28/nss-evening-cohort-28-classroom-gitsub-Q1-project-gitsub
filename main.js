@@ -243,9 +243,12 @@ const createRepo = (e) => {
 }
 newForm.addEventListener("submit", createRepo);
 
+// This should render the cards as soon as the overview page is loaded. Possibly will cause conflicts with the other pages.
+// const autoRender = () => {
+//   pinsOnDom(pinnedRepos);
+// }
+// autoRender();
 
-
-if (("#repoCards") === true) {
 const pinnedListener = document.querySelector("#pinnedRepos"); //Looks at the repo cards
 pinnedListener.addEventListener("click", (e) => {
   if (e.target.id.includes("delete")) { // Looks for the delete button on a particular card.
@@ -255,11 +258,3 @@ pinnedListener.addEventListener("click", (e) => {
     pinsOnDom(pinnedRepos); // Renders everything again, this time with the new array object.
   }
 });
-
-}
-// This should render the cards as soon as the overview page is loaded. No idea if it will cause conflicts with the other pages.
-
-const autoRender = () => {
-  pinsOnDom(pinnedRepos);
-}
-autoRender();
