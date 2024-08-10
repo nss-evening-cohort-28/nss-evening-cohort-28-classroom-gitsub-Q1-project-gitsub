@@ -48,11 +48,17 @@ body {
 .tools-buttons li, .repo-stats li {
   color: black;
   font-weight: bold;
-  background-color: yellow;
   border-radius: 12px;
   margin: 0 5px;
   padding: 0 10px;
 }
+.tools-buttons li {
+  background-color: #80FF72;
+}
+.repo-stats li {
+  background-color: #584bec;
+}
+
 .col-2 {
   display: flex;
   place-items: center;
@@ -64,4 +70,12 @@ body {
   height: 3em;
   border: none;
   /* border: 1px solid wheat; */
+}
+#find-a-repo-form {
+  color: wheat;
+  background-color: #502F4C;
+}
+
+#find-a-repo-form::placeholder {
+  color: rgb(126, 123, 123);
 }
