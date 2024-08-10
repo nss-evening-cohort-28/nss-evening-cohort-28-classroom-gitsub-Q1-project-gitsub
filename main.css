@@ -64,3 +64,18 @@ nav {
   justify-content: center;
   align-content: center;
 }
+
+#exampleFormControlInput1 {
+  width: 850px;
+}
+
+#exampleFormControlInput2 {
+  width: 850px;
+  height: 150px;
+}
+
+.formManip {
+  padding-top: 65px;
+  display: flex; 
+  gap: 25px;
+}
