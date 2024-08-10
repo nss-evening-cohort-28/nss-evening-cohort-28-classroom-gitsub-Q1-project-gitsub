@@ -142,31 +142,6 @@ const renderToDom = (divID, html) => {
 }
 
 // Injecting the profile into the dom
-const navBarDom = document.querySelector(".navBar")
-navBarDom.innerHTML = `<div class="Overview-button">
-                <button><a href="index.html">
-                  Overview Page
-                </a></button>
-              </div>
-
-              <div class="project-button">
-                <button><a href="projects.html">
-                  Projects Page
-                </a></button>
-              </div>
-
-              <div class="repo-button">
-                <button><a href="repos.html">
-                  Repo Page
-                </a></button>
-              </div>
-
-              <div class="package-button">
-                <button><a href="packages.html">
-                  Packages Page
-                </a></button>
-              </div>`;
-
 const profileDom = document.querySelector(".profile")
 profileDom.innerHTML = `
           <div class="top-section">
