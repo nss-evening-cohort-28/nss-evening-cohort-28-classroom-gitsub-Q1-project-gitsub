@@ -272,18 +272,23 @@ footerDom.innerHTML = `
 `
 
 //create function to get repo data on the DOM
-// const reposOnDom = (array) => {
-//   let domString = "";
-//   array.forEach((element) => {
-//     domString += `
-//  <div class="card" style="width: 18rem;">
-//   <h5 class="card-title">${element.title}</h5
-//   <p class="card-text">${element.description}.</p>
-//    <p class="list-group-item">${element.codingLang}</p>
-// </div>
-// `    
-//   });
-//   renderToDom(".pinned", domString)
-// }
+const reposOnDom = (array) => {
+  let domString = "";
+  array.forEach((element) => {
+    domString += `
+ <div class="card">
+  <div class="card-header">
+   ${element.title}
+  </div>
+  <div class="card-body">
+    <p class="card-text">${element.description}</p>
+    <a href="#" class="btn btn-primary">Learn More</a>
+    
+  </div>
+</div>
+`    
+  });
+  renderToDom(".pinned", domString)
+}
 
-// reposOnDom(repos);
+reposOnDom(repos);
