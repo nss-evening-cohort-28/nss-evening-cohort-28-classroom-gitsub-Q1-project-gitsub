@@ -34,7 +34,7 @@ export const repositoryCards = (array) => {
         </button>
       </div>
 
-      <hr></hr>
+      <hr class="my-3"></hr>
     </div>`;
   });
   renderToDom('.render-repos-here', domString);
