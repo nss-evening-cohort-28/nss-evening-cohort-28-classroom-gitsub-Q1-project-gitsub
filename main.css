@@ -65,3 +65,11 @@ body {
   border: none;
   /* border: 1px solid wheat; */
 }
+#find-a-repo-form {
+  color: wheat;
+  background-color: #502F4C;
+}
+
+#find-a-repo-form::placeholder {
+  color: rgb(126, 123, 123);
+}
