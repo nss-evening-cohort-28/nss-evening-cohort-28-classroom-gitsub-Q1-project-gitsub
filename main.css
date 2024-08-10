@@ -1,0 +1,104 @@
+body {
+  background: #0d1117;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.navbar {
+  background: transparent !important;
+}
+
+.navbar .nav-link {
+  color: white !important;
+}
+
+.logo {
+  height: 20px;
+  width: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+#profile {
+  width: 20.5rem;
+  height:60%;
+  padding-right: 15px;
+  margin-right: 15px;
+  float: left;
+  border: 4px solid #FF0000;
+}
+#picture {
+  border-radius: 50%;
+}
+/*
+===================== Repository List =====================
+*/
+
+.repos-list, .repo-form {
+  border: 1px solid rgb(116, 115, 115);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.tools-buttons, .repo-stats {
+  /* border: black 2px solid; */
+  list-style: none;
+  display: flex;
+}
+.tools-buttons li, .repo-stats li {
+  color: black;
+  font-weight: bold;
+  border-radius: 12px;
+  margin: 0 5px;
+  padding: 0 10px;
+}
+.tools-buttons li {
+  background-color: #80FF72;
+}
+.repo-stats li {
+  background-color: #584bec;
+}
+
+.col-2 {
+  display: flex;
+  place-items: center;
+}
+.col-2 button {
+  color: wheat;
+  background: none;
+  width: 3em;
+  height: 3em;
+  border: none;
+  /* border: 1px solid wheat; */
+}
+#find-a-repo-form {
+  color: wheat;
+  background-color: #502F4C;
+}
+
+#find-a-repo-form::placeholder {
+  color: rgb(126, 123, 123);
+}
