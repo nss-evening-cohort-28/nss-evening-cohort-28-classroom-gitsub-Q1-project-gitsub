@@ -22,6 +22,19 @@ const createRepository = () => {
   repositoryCards(repositories);
 };
 
+// Search
+const search = (e) => {
+  // Keeps track of each keystroke if you console.log it.
+  const userInput = e.target.value.toLowerCase();
+  // Here I'm using the array.filter method to check if an object includes any matches to what the user typed, stored inside a varioble. 
+  const searchResults = repositories.filter(obj => 
+    // One of these will evaluate to true.
+    obj.name.toLowerCase().includes(userInput)
+  );
+  // Pass in searchResults since that's the array that's filtered.
+  repositoryCards(searchResults);
+};
+
 // Render the cards on first page load.
 repositoryCards(repositories);
 
@@ -32,3 +45,6 @@ repoForm.addEventListener('submit', (e) => {
   createRepository();
   repoForm.reset();
 });
+
+const searchRepoForm = document.querySelector('#find-a-repo-form');
+searchRepoForm.addEventListener('keyup', search);
