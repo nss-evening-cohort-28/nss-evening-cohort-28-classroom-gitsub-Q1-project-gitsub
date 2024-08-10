@@ -19,17 +19,24 @@ body {
   width: auto;
 }
 
-#profile {
-  width: 20.5rem;
-  height:60%;
-  padding-right: 15px;
-  margin-right: 15px;
-  float: left;
-  border: 4px solid #FF0000;
+.card {
+color: white;  
+background: transparent;
+width: 300px;
+height: auto;
+top:21px;
+left: 20px;
+padding-right: 15px;
+margin-right: 15px;
+float: left;
+
 }
-#picture {
-  border-radius: 50%;
+
+.list-group-item {
+  background-color: transparent;
+  color: white;
 }
+
 /*
 ===================== Repository List =====================
 */
