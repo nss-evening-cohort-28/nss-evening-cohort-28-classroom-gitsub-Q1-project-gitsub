@@ -210,33 +210,6 @@ id:3,
 
 
 
-
-
-
-
-
-
-
-
-const form =document.querySelector('form');
-
-const createRepos = (e) => {
-e.preventDefault();
-
-const createReposObj = {
-id:repos.length+1,
-title:document.querySelector('title').value,
-description:document.querySelector('description').value,
-};
-
-repos.push(createReposObj);
-cardsOnDom(repos);
-console.log(repos)
-form.reset();
-
-};
-
-form.addEventListener('submit',createRepos)
 // Injecting the profile into the dom
 const profileDom = document.querySelector(".profile")
 profileDom.innerHTML = `
@@ -297,20 +270,3 @@ footerDom.innerHTML = `
                 <a id="footer-tag" href="">About</a>
               </div>
 `
-
-//create function to get repo data on the DOM
-// const reposOnDom = (array) => {
-//   let domString = "";
-//   array.forEach((element) => {
-//     domString += `
-//  <div class="card" style="width: 18rem;">
-//   <h5 class="card-title">${element.title}</h5
-//   <p class="card-text">${element.description}.</p>
-//    <p class="list-group-item">${element.codingLang}</p>
-// </div>
-// `    
-//   });
-//   renderToDom(".pinned", domString)
-// }
-
-// reposOnDom(repos);
