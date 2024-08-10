@@ -181,3 +181,30 @@ id:3,
 
 
 
+
+
+
+
+
+
+
+
+const form =document.querySelector('form');
+
+const createRepos = (e) => {
+e.preventDefault();
+
+const createReposObj = {
+id:repos.length+1,
+title:document.querySelector('title').value,
+description:document.querySelector('description').value,
+};
+
+repos.push(createReposObj);
+cardsOnDom(repos);
+console.log(repos)
+form.reset();
+
+};
+
+form.addEventListener('submit',createRepos)
