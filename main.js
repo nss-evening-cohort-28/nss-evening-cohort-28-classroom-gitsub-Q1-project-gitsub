@@ -232,7 +232,7 @@ const pinsOnDom = (pinnedRepos) => {
 
 const newForm = document.querySelector("form");
 
-const createRepo = (e) => {
+const createPin = (e) => {
   e.preventDefault();
 
   // Creates a new item for the array based on what the user entered into the form.
@@ -249,7 +249,7 @@ const createRepo = (e) => {
   pinsOnDom(pinnedRepos);
   newForm.reset();
 }
-newForm.addEventListener("submit", createRepo);
+newForm.addEventListener("submit", createPin);
 
 // This should render the cards as soon as the overview page is loaded. Possibly will cause conflicts with the other pages.
 // const autoRender = () => {
