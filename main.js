@@ -56,19 +56,21 @@ const displayPinnedRepositories = () => {
   // Filter pinned repositories
   const pinnedRepos = repositories.filter(repo => repo.pinned);
 
-  // Clear the div before adding new content
-  pinnedRepoList.innerHTML = '';
+  repositoryCards(pinnedRepos);
 
-  // Loop through pinned repositories and create elements
-  pinnedRepos.forEach(repo => {
-    const repoCard = document.createElement('div');
-    repoCard.className = 'repo-card';
-    repoCard.innerHTML = `
-      <h3>${repo.name}</h3>
-      <p>${repo.description}</p>
-    `;
-    pinnedRepoList.appendChild(repoCard);
-  });
+  // // Clear the div before adding new content
+  // pinnedRepoList.innerHTML = '';
+
+  // // Loop through pinned repositories and create elements
+  // pinnedRepos.forEach(repo => {
+  //   const repoCard = document.createElement('div');
+  //   repoCard.className = 'repo-card';
+  //   repoCard.innerHTML = `
+  //     <h3>${repo.name}</h3>
+  //     <p>${repo.description}</p>
+  //   `;
+  //   pinnedRepoList.appendChild(repoCard);
+  // });
 };
 
 // Call the function to display pinned repositories on page load
