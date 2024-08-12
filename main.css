@@ -8,6 +8,7 @@ body {
 
 .navbar {
   background: transparent !important;
+  margin: 20px;
 }
 
 .navbar .nav-link {
@@ -78,6 +79,9 @@ float: right;
   text-align: center;
 }
 
+.divTitle {
+  text-align: center;
+}
 
 
 
