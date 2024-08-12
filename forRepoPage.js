@@ -16,7 +16,7 @@ const createRepository = () => {
   repositories.push(newRepository);
 
   // Render the repos array.
-  repositoryCards(repositories);
+  renderCards(repositories);
 };
 
 // Search
