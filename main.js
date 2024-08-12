@@ -1,5 +1,8 @@
 import { repositories } from "./data.js";
 import { repositoryCards } from "./components/repositoryCards.js";
+import { renderToDom } from "./utils/renderToDom.js";
+
+
 
 /*
 ===================== Repository List =====================
@@ -50,28 +53,23 @@ const searchRepoForm = document.querySelector('#find-a-repo-form');
 searchRepoForm.addEventListener('keyup', search);
 
 const displayPinnedRepositories = () => {
-  // Get the div where pinned repositories will be displayed
-  const pinnedRepoList = document.getElementById('pinned-repos');
-
   // Filter pinned repositories
   const pinnedRepos = repositories.filter(repo => repo.pinned);
 
-  repositoryCards(pinnedRepos);
+  // Create HTML content for pinned repositories
+  let content = '';
+  pinnedRepos.forEach(repo => {
+    content += `
+      <div class="repo-card">
+        <h3>${repo.name}</h3>
+        <p>${repo.description}</p>
+      </div>
+    `;
+  });
 
-  // // Clear the div before adding new content
-  // pinnedRepoList.innerHTML = '';
-
-  // // Loop through pinned repositories and create elements
-  // pinnedRepos.forEach(repo => {
-  //   const repoCard = document.createElement('div');
-  //   repoCard.className = 'repo-card';
-  //   repoCard.innerHTML = `
-  //     <h3>${repo.name}</h3>
-  //     <p>${repo.description}</p>
-  //   `;
-  //   pinnedRepoList.appendChild(repoCard);
-  // });
+  // Render the content to the DOM
+  renderToDom('#pinned-repos', domString);
 };
 
 // Call the function to display pinned repositories on page load
-displayPinnedRepositories();
+document.addEventListener('DOMContentLoaded', displayPinnedRepositories);
