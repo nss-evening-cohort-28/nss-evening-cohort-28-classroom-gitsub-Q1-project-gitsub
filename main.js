@@ -24,7 +24,7 @@ const displayPinnedRepositories = () => {
   });
 
   // Render the content to the DOM
-  renderToDom('#pinned-repos', domString);
+  renderToDom('#pinned-repos', content);
 };
 
 // Call the function to display pinned repositories on page load
