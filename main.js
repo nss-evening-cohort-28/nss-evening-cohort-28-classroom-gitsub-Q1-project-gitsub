@@ -45,6 +45,3 @@ repoForm.addEventListener('submit', (e) => {
   createRepository();
   repoForm.reset();
 });
-
-const searchRepoForm = document.querySelector('#find-a-repo-form');
-searchRepoForm.addEventListener('keyup', search);
