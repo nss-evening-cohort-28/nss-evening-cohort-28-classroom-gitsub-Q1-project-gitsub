@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<link>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="../main.css">
-  <title>Repositories GitSub</title>
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Playwrite+NZ:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Wellfleet&family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../main.css"></link>
+  </head>
+</html>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,7 +42,7 @@
       </ul>
     </div>
   </nav>
-
+  <section>
   <div class="card">
     <img class="rounded-circle" src="https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg?cs=srgb&dl=pexels-godisable-jacob-226636-871495.jpg&fm=jpg&_gl=1*w79j13*_ga*NzMwMjM1ODA2LjE3MjMxNjM4ODk.*_ga_8JE65Q40S6*MTcyMzE2Mzg4OC4xLjEuMTcyMzE2NTAzNy4wLjAuMA.." class="card-img-top" alt="https://images.pexels.com/photos/539727/pexels-photo-539727.jpeg?auto=compress&cs=tinysrgb&w=300">
     <div class="card-body">
@@ -65,33 +70,32 @@
       <button class="btn btn-primary" type="submit">...</button> -->
     </div>
   </div>
-  <div class="container">
-    <section class="repos-list mt-4">
-      <form>
-        <input type="text" placeholder="Find a repository..." class="form-control mb-3" id="find-a-repo-form">
-      </form>
-
-      <div class="render-repos-here"></div>
-    </section>
-
-    <section class="repo-form my-5">
-      <h3>Create a new repository</h3>
-      <form id="target-repo-form">
-        <div class="mb-3">
-          <label for="repo-name" class="form-label">Repository name</label>
-          <input type="text" class="form-control" id="repo-name" placeholder="GitSub" required>
-          <small>Let your creativity shine here!</small>
-        </div>
-        <div class="mb-3">
-          <label for="repo-description" class="form-label">Description (optional)</label>
-          <input type="text" class="form-control" id="repo-description" rows="3">
-        </div>
-        <button type="submit" class="btn btn-warning">Create repository</button>
-      </form>
-    </section>
+  </section>
+  <div class="container1">
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-  <script type="module" src="../forRepoPage.js"></script>
+  <div class="container2">
+    <form>
+      <div class="form-floating mb-3 bg-dark text-white">
+        <input type="url" class="form-control" id="imageUrl" placeholder="Image" required>
+        <label for="imageUrl">Image Url</label>
+      </div>
+
+      <div class="form-floating mb-3 bg-dark text-white">
+        <input type="text" class="form-control" id="company" placeholder="Company" required>
+        <label for="company">Company</label>
+      </div>
+
+      <div class="form-floating mb-3 bg-dark text-white">
+        <input type="text" class="form-control" id="description" placeholder="Description" required>
+        <label for="description">Description</label>
+      </div>
+
+      <button type="submit" class="btn btn-success" id="form-submit">Add Package</button>
+    </form>
+  </div>
+  <div id="packagePage"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../main.js"></script>
 </body>
 </html>
