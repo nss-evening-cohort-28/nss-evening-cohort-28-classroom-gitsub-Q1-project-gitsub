@@ -19,7 +19,6 @@ body {
   width: auto;
 }
 
-<<<<<<< HEAD
 .card {
 color: white;  
 background: transparent;
@@ -30,8 +29,7 @@ left: 20px;
 padding-right: 15px;
 margin-right: 15px;
 float: left;
-
-=======
+}
 
 
 
@@ -62,7 +60,6 @@ float: left;
   margin-right: 15px;
   float: left;
   border: 4px solid #FF0000;
->>>>>>> 411ad129c8db814df5ca80780b68085513197f02
 }
 
 .list-group-item {
