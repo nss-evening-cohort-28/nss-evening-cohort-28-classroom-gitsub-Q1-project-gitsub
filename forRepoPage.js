@@ -29,7 +29,7 @@ const search = (e) => {
     obj.name.toLowerCase().includes(userInput)
   );
   // Pass in searchResults since that's the array that's filtered.
-  repositoryCards(searchResults);
+  renderCards(searchResults);
 };
 
 // Render the cards on first page load.
@@ -71,18 +71,18 @@ const renderCards = (array) => {
     </div>`;
   });
   renderToDom('.render-repos-here', domString);
+
+  // Event listeners
+  const repoForm = document.querySelector('#target-repo-form'); // Targeting the form.
+  repoForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    createRepository();
+    repoForm.reset();
+  });
+
+const searchRepoForm = document.querySelector('#find-a-repo-form');
+searchRepoForm.addEventListener('keyup', search); 
 }
 
 // Start page
 renderCards(repositories);
-
-// Event listeners
-const repoForm = document.querySelector('#target-repo-form'); // Targeting the form.
-repoForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  createRepository();
-  repoForm.reset();
-});
-
-const searchRepoForm = document.querySelector('#find-a-repo-form');
-searchRepoForm.addEventListener('keyup', search);
