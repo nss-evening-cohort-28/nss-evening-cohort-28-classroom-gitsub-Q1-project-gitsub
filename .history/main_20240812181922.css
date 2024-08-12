@@ -1,0 +1,184 @@
+body {
+    background-color: #0F1218;
+    text-align: center;
+    margin: 50px;
+    width: 1200px;
+    color: white;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 75rem;
+    height: 75rem;
+    gap: 2%;
+}
+
+.profile {
+    width: 15rem;
+    height: 50rem;
+    text-align: left;
+
+}
+
+.navBar {
+    border: 1px solid #24292d;
+    width: 60rem;
+    height: 5rem;
+}
+
+.pinned {
+    border: none;
+    width: 60rem;
+    height: 25rem;
+    margin-top: 2%;
+}
+
+.newProject {
+    width: 60rem;
+    height: 25rem;
+    margin-top: 2%;
+    text-align: start;
+    color: #B3B3B3;
+}
+
+#footerContainer {
+    display: flex;
+    align-self: flex-end;
+
+}
+
+/* Casey styling: Projects section */
+
+#projectCards {
+    border: 1px solid #24292d;
+}
+
+.card-header {
+    background-color: #2b3137;
+    color: #B3B3B3;
+    text-align: start;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0F1218;
+    color: #B3B3B3;
+    border: 1px solid #24292d;
+}
+
+
+
+.form-control {
+    background-color: #0F1218;
+    border: 1px solid #24292d;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: #0F1218;
+    color: white;
+}
+
+.createBtn {
+    background-color: #238536;
+}
+
+/* Noah Styling: Profile Section Start*/
+h3, h4, h5 {
+    margin: 10px;
+}
+
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0px;
+}
+
+.card-img-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+
+  }
+  .sponsor-pic {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .profile-body {
+    font-size: small;
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+  }
+
+  .middle-section {
+    font-size: small;
+    margin-left: 10px;
+  }
+/* Noah Styling: Profile Section End */
+
+/* Noah Styling: Footer Section Start */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-pic {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    opacity: 60%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+  }
+
+
+/* Noah Styling: Footer Section Start */
+
+/* Noah Styling: Navbar Section Start */
+
+.navBar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 20px;
+}
+
+
+
+
+
+/* Noah Styling: Navbar Section End */
