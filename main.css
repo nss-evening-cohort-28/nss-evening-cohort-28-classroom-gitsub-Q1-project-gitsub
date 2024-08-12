@@ -20,6 +20,21 @@ body {
   width: auto;
 }
 
+.container2SF {
+  width: 60%;
+  border: 1px;
+  margin: 20px auto; /* Center and adjust spacing around the container */
+  display: flex; 
+  flex-direction: column; /* Stack children vertically */
+  align-items: center;
+}
+
+#formSF {
+  width: 100%; /* Full width of the container */
+  max-width: 600px; /* Maximum width for the form */
+  margin-top: 20px;
+}
+
 .card {
 color: white;  
 background: transparent;
@@ -75,6 +90,8 @@ float: right;
   flex-wrap: wrap;
 } */
 
+
+
 #pinned-repos {
   text-align: center;
   border: 1px solid #ccc;
@@ -83,7 +100,6 @@ float: right;
 .divTitle {
   text-align: center;
 }
-
 
 
 
