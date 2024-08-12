@@ -15,8 +15,6 @@ const projects = [
   },
 ]
 
-
-
 // projectCount to show how many projects "open" in header
 const projectCount = projects.length;
 
@@ -57,125 +55,6 @@ const projectsOnDom = () => {
 }
 
 
-const repos = [
-  {
-  id:1,
-  title:"dummyRepo1",
-  description:"red",
-  codingLang:"javaScript",
-  tags:"yellow",
-  updatedTimeSin:"",
-  issues:"broken",
-  vis:true,
-  forks:4,
-  stars:5,
-  },
-  
-  {
-  id:2,
-  title:"dummyRepo2",
-  description:"green",
-  codingLang:"CSS",
-  tags:"round",
-  undatedTimeSin:"",
-  issues:"bugs",
-  vis:false,
-  forks:10,
-  stars:2,
-  },
-  
-  {
-  id:3,
-  title:"dummyRepo3",
-  description:"brown",
-  codingLang:"html",
-  tags:"square",
-  updatedTimeSin:"",
-  issues:"merging",
-  vis:true,
-  forks:3,
-  stars:1,
-  },
-  
-  {
-    id:4,
-    title:"dummyRepo4",
-    description:"orange",
-    codingLang:"python",
-    tags:"oval",
-    updatedTimeSin:"",
-    issues:"merging",
-    vis:true,
-    forks:3,
-    stars:1,
-  },
-  
-  {
-    id:5,
-    title:"dummyRepo5",
-    description:"brown",
-    codingLang:"cSharp",
-    tags:"square",
-    updatedTimeSin:"",
-    issues:"merging",
-    vis:false,
-    forks:3,
-    stars:1,
-  },
-  
-  {
-    id:6,
-    title:"dummyRepo6",
-    description:"pink",
-    codingLang:"react",
-    tags:"octogon",
-    updatedTimeSin:"",
-    issues:"merging",
-    vis:true,
-    forks:3,
-    stars:1,
-  },
-  ]
-  
-  
-  const packages = [
-  {
-  id:1,
-  title:"devPort",
-  description:"",
-  },
-  
-  {
-  id:2,
-  title:"viewPort",
-  description:"",
-  },
-  
-  {
-  id:3,
-   title:"packPage",
-    description:"",
-  },
-    
-   {
-   id:4,
-   title:"poundGround",
-    description:"",
-    },
-      
-    {
-    id:5,
-    title:"elbowSwift",
-    description:"",
-    },
-        
-    {
-    id:6,
-   title:"patrolingPaw",
-    description:"",
-    },
-          
-  ]
 
 // Renders arguments to the dom. divID is the target div you want to inject the html. "html" would be your "domString"
 const renderToDom = (divID, html) => {
@@ -205,7 +84,7 @@ e.preventDefault(); // stops page from refreshing
 form = document.querySelector("#projectForm");
 form.addEventListener("submit", createProject);
 
-
+projectsOnDom();
 
 
 
@@ -331,61 +210,7 @@ id:3,
 
 
 
-
-
-
-
-
-
-
-
-const repoForm =document.querySelector('form');
-
-const createRepos = (e) => {
-e.preventDefault();
-
-const createReposObj = {
-id:repos.length+1,
-title:document.querySelector('title').value,
-description:document.querySelector('description').value,
-};
-
-repos.push(createReposObj);
-cardsOnDom(repos);
-console.log(repos)
-repoForm.reset();
-
-};
-
-repoForm.addEventListener('submit',createRepos)
-
-
 // Injecting the profile into the dom
-const navBarDom = document.querySelector(".navBar")
-navBarDom.innerHTML = `<div class="Overview-button">
-                <button><a href="index.html">
-                  Overview Page
-                </a></button>
-              </div>
-
-              <div class="project-button">
-                <button><a href="projects.html">
-                  Projects Page
-                </a></button>
-              </div>
-
-              <div class="repo-button">
-                <button><a href="repos.html">
-                  Repo Page
-                </a></button>
-              </div>
-
-              <div class="package-button">
-                <button><a href="packages.html">
-                  Packages Page
-                </a></button>
-              </div>`;
-
 const profileDom = document.querySelector(".profile")
 profileDom.innerHTML = `
           <div class="top-section">
@@ -445,91 +270,3 @@ footerDom.innerHTML = `
                 <a id="footer-tag" href="">About</a>
               </div>
 `
-
-
-// projectCount to show how many projects "open" in header
-const projectCount = projects.length;
-
-let domString = "";
-
-// Renders the project cards onto the dom from the projects array
-const projectsOnDom = () => {
-  domString = `
-    <div id="projectCards" class="card">
-      <div class="card-header">
-        ${projectCount} Open
-      </div>
-      <ul class="list-group list-group-flush">
-  `;
-  for (project of projects) {
-    domString += `
-        <li class="list-group-item">
-          <div id="titleEl">
-            ${project.title}
-          </div>
-          <div id="visEl">
-            ${project.vis ? "Public" : "Private"}
-          </div>
-          <div id="timeSigEl">
-          ${project.updatedTimeSig}
-          </div>
-          <div id="descEl">
-            ${project.description}
-          </div>
-        </li>
-    `
-  }
-  domString += `
-        </ul>
-    </div>
-  `
-  renderToDom("#projects", domString);
-}
-
-
-
-// Create, the "C" in CRUD
-form = document.querySelector("#projectForm")
-
-const createProject = (e) => {
-e.preventDefault(); // stops page from refreshing
-  const newProjectObject = {
-      id: projects.length + 1,
-      title: document.querySelector("#projectNameInput").value,
-      description: document.querySelector("#descInput").value,
-      updatedTimeSig: "Updated 1 minute ago",
-      vis: "Public",
-      };
-
-  projects.push(newProjectObject);
-  projectsOnDom();
-  form.reset();
-}
-
-form = document.querySelector("#projectForm");
-form.addEventListener("submit", createProject);
-
-projectsOnDom();
-
-//create function to get repo data on the DOM
-const reposOnDom = (array) => {
-  let domString = "";
-  array.forEach((element) => {
-    domString += `
- <div class="card">
-  <div class="card-header">
-   ${element.title}
-  </div>
-  <div class="card-body">
-    <p class="card-text">${element.description}</p>
-    <a href="#" class="btn btn-primary">Learn More</a>
-    
-  </div>
-</div>
-`    
-  });
-  renderToDom(".pinned", domString)
-}
-
-reposOnDom(repos);
-projectsOnDom();
