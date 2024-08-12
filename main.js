@@ -15,6 +15,8 @@ const projects = [
   },
 ]
 
+
+
 // projectCount to show how many projects "open" in header
 const projectCount = projects.length;
 
@@ -84,7 +86,7 @@ e.preventDefault(); // stops page from refreshing
 form = document.querySelector("#projectForm");
 form.addEventListener("submit", createProject);
 
-projectsOnDom();
+
 
 
 
@@ -218,7 +220,7 @@ id:3,
 
 
 
-const form =document.querySelector('form');
+const repoForm =document.querySelector('form');
 
 const createRepos = (e) => {
 e.preventDefault();
@@ -232,11 +234,13 @@ description:document.querySelector('description').value,
 repos.push(createReposObj);
 cardsOnDom(repos);
 console.log(repos)
-form.reset();
+repoForm.reset();
 
 };
 
-form.addEventListener('submit',createRepos)
+repoForm.addEventListener('submit',createRepos)
+
+
 // Injecting the profile into the dom
 const profileDom = document.querySelector(".profile")
 profileDom.innerHTML = `
@@ -319,3 +323,4 @@ const reposOnDom = (array) => {
 }
 
 reposOnDom(repos);
+projectsOnDom();
