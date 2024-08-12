@@ -16,7 +16,6 @@ body {
 }
 
 .profile {
-    border: 5px solid red;
     width: 15rem;
     height: 50rem;
     text-align: left;
@@ -24,7 +23,7 @@ body {
 }
 
 .navBar {
-    border: 5px solid blue;
+    border: 1px solid #24292d;
     width: 60rem;
     height: 5rem;
 }
