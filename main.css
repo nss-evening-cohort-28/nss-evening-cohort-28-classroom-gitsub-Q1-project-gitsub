@@ -183,3 +183,12 @@ h3, h4, h5 {
 
 
 /* Noah Styling: Navbar Section End */
+
+
+form {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+}
+    
