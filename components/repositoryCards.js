@@ -37,7 +37,7 @@ export const repositoryCards = (array) => {
       <hr class="my-3"></hr>
     </div>`;
   });
-  renderToDom('.render-repos-here', domString);
+  renderToDom('#pinned-repos', domString);
 
   // Event Listeners
   // TODO: Need to figure out how to toggle the state multiple times. So far it only fills the star only on the first repo. I think event bubbling is needed here.
