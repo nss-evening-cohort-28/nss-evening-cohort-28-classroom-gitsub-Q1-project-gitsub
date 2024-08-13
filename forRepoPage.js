@@ -1,5 +1,5 @@
 import { repositories } from "./data.js";
-import { repositoryCards } from "./components/repositoryCards.js";
+// import { repositoryCards } from "./components/repositoryCards.js";
 import { renderToDom } from "./utils/renderToDom.js";
 
 // Collect the form data.
@@ -71,8 +71,10 @@ const renderCards = (array) => {
     </div>`;
   });
   renderToDom('.render-repos-here', domString);
+};
 
-  // Event listeners
+// Event listeners
+const events = () => {
   const repoForm = document.querySelector('#target-repo-form'); // Targeting the form.
   repoForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -80,9 +82,10 @@ const renderCards = (array) => {
     repoForm.reset();
   });
 
-const searchRepoForm = document.querySelector('#find-a-repo-form');
-searchRepoForm.addEventListener('keyup', search); 
-}
+  const searchRepoForm = document.querySelector('#find-a-repo-form');
+  searchRepoForm.addEventListener('keyup', search);
+};
 
-// Start page
+// Start page and events()
 renderCards(repositories);
+events();
