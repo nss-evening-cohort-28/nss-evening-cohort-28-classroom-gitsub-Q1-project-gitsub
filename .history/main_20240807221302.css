@@ -1,0 +1,137 @@
+body {
+    background-color: #0F1218;
+    text-align: center;
+    margin: 50px;
+    width: 1200px;
+    color: white;
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 75rem;
+    height: 75rem;
+    gap: 2%;
+}
+
+.profile {
+    border: 5px solid red;
+    width: 15rem;
+    height: 50rem;
+    text-align: left;
+
+}
+
+.navBar {
+    border: 5px solid blue;
+    width: 60rem;
+    height: 5rem;
+}
+
+.pinned {
+    border: 5px solid yellow;
+    width: 60rem;
+    height: 25rem;
+    margin-top: 2%;
+}
+
+.newProject {
+    border: 5px solid green;
+    width: 60rem;
+    height: 25rem;
+    margin-top: 2%;
+}
+
+.footer {
+    border: 5px solid orange;
+    width: 60rem;
+    height: 5rem;
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+#footerContainer {
+    display: flex;
+    align-self: flex-end;
+
+}
+
+/* Noah Styling: Profile Section Start*/
+h3, h4, h5 {
+    margin: 10px;
+}
+
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0px;
+}
+
+.card-img-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+  }
+
+  .bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+
+  }
+  .sponsor-pic {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .profile-body {
+    font-size: small;
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+  }
+
+  .middle-section {
+    font-size: small;
+    margin-left: 10px;
+  }
+/* Noah Styling: Profile Section End */
+
+/* Noah Styling: Footer Section Start */
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-pic {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+  }
+
+
+/* Noah Styling: Footer Section Start */
